@@ -6,13 +6,13 @@ describe('Service: <%= cameledName %>', function () {
   beforeEach(module('<%= scriptAppName %>'));
 
   // instantiate service
-  var <%= cameledName %>;
-  beforeEach(inject(function (_<%= cameledName %>_) {
-    <%= cameledName %> = _<%= cameledName %>_;
+  var m<%= cameledName %>;
+  beforeEach(inject(function (<%= cameledName %>) {
+    m<%= cameledName %> = <%= cameledName %>;
   }));
 
   it('should do something', function () {
-    expect(!!<%= cameledName %>).toBe(true);
+    expect(!!m<%= cameledName %>).toBe(true);
   });
 
 });
